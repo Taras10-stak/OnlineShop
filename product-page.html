@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/ion.rangeSlider.css">
+  <link rel="stylesheet" href="css/jquery.formstyler.css">
+  <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+  <link rel="stylesheet" href="css/jquery.rateyo.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header_top">
+      <div class="container">
+        <div class="header_top-inner">
+          <nav class="menu">
+            <button class="menu_btn">
+              <div class="menu_btn-line"></div>
+              <div class="menu_btn-line"></div>
+              <div class="menu_btn-line"></div>
+            </button>
+            <ul class="menu_list">
+              <li class="menu_item">
+                <a class="menu_link" href="#">
+                  Магазини
+                </a>
+              </li>
+              <li class="menu_item">
+                <a class="menu_link" href="#">
+                  Акції
+                </a>
+              </li>
+              <li class="menu_item">
+                <a class="menu_link" href="#">
+                  Доставка та оплата
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <a class="logo" href="#">
+            <img class="logo_img" src="images/logo.svg" alt="">
+          </a>
+          <div class="header_box">
+            <p class="header_adress">
+              м. Київ вул. Наукова 25
+            </p>
+            <ul class="user-list">
+              <li class="user-list_item">
+                <a class="user-list_link" href="#">
+                  <img src="images/heart.svg" alt="">
+                </a>
+              </li>
+              <li class="user-list_item">
+                <a class="user-list_link" href="#">
+                  <img src="images/user.svg" alt="">
+                </a>
+              </li>
+              <li class="user-list_item">
+                <a class="user-list_link basket" href="#">
+                  <img src="images/basket.svg" alt="">
+                  <p class="basket_num">1</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <ul class="menu-mobile_list">
+      <li class="menu-mobile_item">
+        <a class="menu-mobile_link" href="#">
+          <img class="menu-mobile_img" src="images/user.svg" alt="">
+          <p>Увійти</p>
+        </a>
+      </li>
+      <li class="menu-mobile_item">
+        <a class="menu-mobile_link" href="#">
+          <img class="menu-mobile_img" src="images/user.svg" alt="">
+          <p>Зареєструватись</p>
+        </a>
+      </li>
+      <li class="menu-mobile_item">
+        <a class="menu-mobile_link" href="#">
+          <img class="menu-mobile_img" src="images/heart.svg" alt="">
+          <p>Обране</p>
+        </a>
+      </li>
+      <li class="menu-mobile_item">
+        <a class="menu-mobile_link" href="#">
+          <img class="menu-mobile_img" src="images/basket.svg" alt="">
+          <p>Кошик</p>
+        </a>
+      </li>
+      <li class="menu-mobile_item">
+        <a class="menu-mobile_link" href="#">
+          <img class="menu-mobile_img" src="images/house.svg" alt="">
+          <p>Магазини</p>
+        </a>
+      </li>
+      <li class="menu-mobile_item">
+        <a class="menu-mobile_link" href="#">
+          <img class="menu-mobile_img" src="images/procent.svg" alt="">
+          <p>Акції</p>
+        </a>
+      </li>
+      <li class="menu-mobile_item">
+        <a class="menu-mobile_link" href="#">
+          <img class="menu-mobile_img" src="images/box.svg" alt="">
+          <p>Доставка і оплата</p>
+        </a>
+      </li>
+      <li class="menu-mobile_item">
+        <a class="menu-mobile_link" href="#">
+          <p>Квадроцикли</p>
+        </a>
+      </li>
+      <li class="menu-mobile_item">
+        <a class="menu-mobile_link" href="#">
+          <p>Катери</p>
+        </a>
+      </li>
+      <li class="menu-mobile_item">
+        <a class="menu-mobile_link" href="#">
+          <p>Катери</p>
+        </a>
+      </li>
+      <li class="menu-mobile_item">
+        <a class="menu-mobile_link" href="#">
+          <p>Гидроцикли</p>
+        </a>
+      </li>
+      <li class="menu-mobile_item">
+        <a class="menu-mobile_link" href="#">
+          <p>Човни</p>
+        </a>
+      </li>
+      <li class="menu-mobile_item">
+        <a class="menu-mobile_link" href="#">
+          <p>Всюдиходи</p>
+        </a>
+      </li>
+      <li class="menu-mobile_item">
+        <a class="menu-mobile_link" href="#">
+          <p>Снігоходи</p>
+        </a>
+      </li>
+      <li class="menu-mobile_item">
+        <a class="menu-mobile_link" href="#">
+          <p>Двигуни</p>
+        </a>
+      </li>
+      <li class="menu-mobile_item">
+        <a class="menu-mobile_link" href="#">
+          <p>Запчастини</p>
+        </a>
+      </li>
+    </ul>
+
+    <div class="menu_mobile-linewrapper">
+      <ul class="menu_mobile-line">
+        <li class="menu_item">
+          <a class="menu_link" href="#">
+            Магазини
+          </a>
+        </li>
+        <li class="menu_item">
+          <a class="menu_link" href="#">
+            Акції
+          </a>
+        </li>
+        <li class="menu_item">
+          <a class="menu_link" href="#">
+            Доставка та оплата
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="header_botton">
+      <div class="container">
+        <ul class="menu-categories">
+          <li class="menu-categories_item">
+            <a class="menu-categories_link" href="#">Квадроцикли</a>
+          </li>
+          <li class="menu-categories_item">
+            <a class="menu-categories_link" href="#">Катери</a>
+          </li>
+          <li class="menu-categories_item">
+            <a class="menu-categories_link" href="#">Гідроцикли</a>
+          </li>
+          <li class="menu-categories_item">
+            <a class="menu-categories_link" href="#">Човни</a>
+          </li>
+          <li class="menu-categories_item">
+            <a class="menu-categories_link" href="#">Всюдиходи</a>
+          </li>
+          <li class="menu-categories_item">
+            <a class="menu-categories_link" href="#">Снігоходи</a>
+          </li>
+          <li class="menu-categories_item">
+            <a class="menu-categories_link" href="#">Двигуни</a>
+          </li>
+          <li class="menu-categories_item">
+            <a class="menu-categories_link" href="#">Запчастини</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </header>
+
+  <div class="breadcrumbs">
+    <div class="container">
+      <div class="breadcrumbs_inner">
+        <ul class="breadcrumbs_list mobile-overflow">
+          <li class="breadcrumbs_list-item">
+            <a href="#">Головна</a>
+          </li>
+          <li class="breadcrumbs_list-item">
+            <a href="#">Гідроцикли</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <section class="product-card">
+    <div class="container">
+      <div class="product-card_inner">
+        <div class="product-card_img-box product-item--sale">
+          <img class="product-card_img" src="images/content/gidrotsikl-large.png" alt="">
+          <p class="product-card_price-old">
+            55 000 $
+          </p>
+          <p class="product-card_price-new">
+            51 000 $
+          </p>
+          <a class="product-card_link" href="#">
+            Знайшли дешевше? Обговоримо ціну?
+          </a>
+          <div class="product-card_btn product-card_btn-mobile">
+            <button>Купити</button>
+          </div>
+        </div>
+        <div class="product-card_content">
+          <h1 class="product-card_title">
+            Гідроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic
+          </h1>
+          <p class="product-card_code">
+            Код товара: 366666-2
+          </p>
+          <div class="product-card_buttons">
+            <a class="product-card_icon-favorite" href="#">
+              <img src="images/heart.svg" alt="">
+            </a>
+            <a class="product-card_icon-comparsion" href="#">
+              <img src="images/content/comparsion.svg" alt="">
+            </a>
+            <a class="rate" href="#">
+              <div class="rate-yo" data-rateyo-rating="4"></div>
+            </a>
+          </div>
+          <div class="tabs-wrapper product-card_tabs">
+            <div class="tabs">
+              <a class="tab product-card_tab tab--active" href="#product-1">
+                Характеристики
+              </a>
+              <a class="tab product-card_tab" href="#product-2">
+                Наявність товару
+              </a>
+            </div>
+            <div class="tabs-container">
+              <div id="product-1" class="tabs-content product-card_tab-content tabs-content--active">
+                <ul>
+                  <li class="product-card_item">
+                    <div class="product-card_item-left">Виробник</div>
+                    <div class="product-card_item-right">Канада</div>
+                  </li>
+                  <li class="product-card_item">
+                    <div class="product-card_item-left">Кількість місць, шт:</div>
+                    <div class="product-card_item-right">3</div>
+                  </li>
+                  <li class="product-card_item">
+                    <div class="product-card_item-left">Потужність, л.с.</div>
+                    <div class="product-card_item-right">155</div>
+                  </li>
+                  <li class="product-card_item">
+                    <div class="product-card_item-left">Тип двигуна</div>
+                    <div class="product-card_item-right">Бензиновий</div>
+                  </li>
+                  <li class="product-card_item">
+                    <div class="product-card_item-left">Рік випуску</div>
+                    <div class="product-card_item-right">2021</div>
+                  </li>
+                </ul>
+                <a class="product-card_more" href="#">Показати більше</a>
+                <div class="product-card_btn">
+                  <button>Купити</button>
+                </div>
+              </div>
+              <div id="product-2" class="tabs-content product-card_tab-content">
+                content-2
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card_tabs">
+    <div class="container">
+      <div class="tabs-wrapper">
+        <div class="tabs card_tab-box mobile-overflow">
+          <a class="tab card_tab" href="#product-card_tabs-1">Про товар</a>
+          <a class="tab card_tab" href="#product-card_tabs-2">Характеристики</a>
+          <a class="tab card_tab" href="#product-card_tabs-3">Відгуки</a>
+          <a class="tab card_tab tab--active" href="#product-card_tabs-4">Самовивіз</a>
+          <a class="tab card_tab" href="#product-card_tabs-5">Доставка</a>
+          <a class="tab card_tab" href="#product-card_tabs-6">Сервіс</a>
+          <a class="tab card_tab" href="#product-card_tabs-7">Гарантія</a>
+        </div>
+      </div>
+      <div class="tabs-container">
+        <div id="product-card_tabs-1" class="card_tab-content tabs-content">content</div>
+        <div id="product-card_tabs-2" class="card_tab-content tabs-content">content</div>
+        <div id="product-card_tabs-3" class="card_tab-content tabs-content">content</div>
+        <div id="product-card_tabs-4" class="card_tab-content tabs-content tabs-content--active">
+          <form>
+            <div class="card_top-line">
+              <label class="card_label-search">
+                Магазин
+                <input type="card_input-search" type="text">
+              </label>
+
+              <label class="card_label-pickup">
+                <input class="filter-style" type="radio" name="pickup">
+                Забрати сьогодні
+              </label>
+
+              <label class="card_label-pickup">
+                <input class="filter-style" type="radio" name="pickup" checked>
+                Забрати протягом тижня
+              </label>
+            </div>
+            <ul class="card_list">
+              <li class="card_list-item card_list-itemtitle">
+                <div class="card_list-address">Адрес</div>
+                <div class="card_list-workhours">Графік роботи</div>
+                <div class="card_list-avialable card_list-avialabletitle">Доступно</div>
+                <div class="card_list-num">Кількість</div>
+                <div class="card_list-btn"></div>
+              </li>
+              <li class="card_list-item">
+                <div class="card_list-address">вул. Шевченка, 37 м. Львів</div>
+                <div class="card_list-workhours">
+                  <div class="workhours"><span>пн-сб:</span><span>09:00-18:00</span></div>
+                  <div class="workhours"><span>нд:</span><span>вихідний</span></div>
+                </div>
+                <div class="card_list-avialable">В наявності</div>
+                <div class="card_list-num">3</div>
+                <div class="card_list-btn">
+                  <button type="submit">Купити</button>
+                </div>
+              </li>
+              <li class="card_list-item">
+                <div class="card_list-address">вул. Наукова, 55 м. Київ</div>
+                <div class="card_list-workhours">
+                  <div class="workhours"><span>пн-сб:</span><span>09:00-18:00</span></div>
+                  <div class="workhours"><span>нд:</span><span>вихідний</span></div>
+                </div>
+                <div class="card_list-avialable">В наявності</div>
+                <div class="card_list-num">2</div>
+                <div class="card_list-btn">
+                  <button type="submit">Купити</button>
+                </div>
+              </li>
+              <li class="card_list-item">
+                <div class="card_list-address">вул. Шухевича, 15 м. Тернопіль</div>
+                <div class="card_list-workhours">
+                  <div class="workhours"><span>пн-сб:</span><span>09:00-18:00</span></div>
+                  <div class="workhours"><span>нд:</span><span>вихідний</span></div>
+                </div>
+                <div class="card_list-avialable">Під замовлення</div>
+                <div class="card_list-num">0</div>
+                <div class="card_list-btn">
+                  <button type="submit">Купити</button>
+                </div>
+              </li>
+              <li class="card_list-item">
+                <div class="card_list-address">вул. Бандери, 5 м. Івано-Франківськ</div>
+                <div class="card_list-workhours">
+                  <div class="workhours"><span>пн-сб:</span><span>09:00-18:00</span></div>
+                  <div class="workhours"><span>нд:</span><span>вихідний</span></div>
+                </div>
+                <div class="card_list-avialable">Під замовлення</div>
+                <div class="card_list-num">0</div>
+                <div class="card_list-btn">
+                  <button type="submit">Купити</button>
+                </div>
+              </li>
+            </ul>
+          </form>
+        </div>
+        <div id="product-card_tabs-5" class="card_tab-content tabs-content">content</div>
+        <div id="product-card_tabs-6" class="card_tab-content tabs-content">content</div>
+        <div id="product-card_tabs-7" class="card_tab-content tabs-content">content</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="products">
+    <div class="container">
+      <div class="products_inner">
+        <h3 class="product_title">
+          С этим товаром покупают
+        </h3>
+        <div class="tabs-wrapper">
+          <div class="tabs products_tabs mobile-overflow">
+            <a class="tab products_tab tab--active" href="#popular-tab-1">запчастини</a>
+            <a class="tab products_tab" href="#popular-tab-2">двигуни</a>
+            <a class="tab products_tab" href="#popular-tab-3">шини</a>
+            <a class="tab products_tab" href="#popular-tab-4">електроніка</a>
+            <a class="tab products_tab" href="#popular-tab-5">інструменти</a>
+            <a class="tab products_tab" href="#popular-tab-6">аксесуари</a>
+          </div>
+        </div>
+        <div class="tabs-container products_container">
+          <div id="popular-tab-1" class="tabs-content products_content tabs-content--active">
+            <div class="product-slider">
+              <div class="product-slider_item">
+                <div class="product-item_wrapper">
+                  <button class="product-item_favorite">
+                  </button>
+                  <button class="product-item_basket">
+                    <img src="images/basket-white.svg" alt="">
+                  </button>
+                  <a class="product-item_notify-link" href="#">
+                    <span>Сообщить о поступлении</span>
+                  </a>
+                  <a class="product-item" href="#">
+                    <p class="product-item_hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item_img" src="images/product-1.png" alt="">
+                    <h4 class="product-item_title">
+                      Водонепроницаемый
+                      рюкзак
+                    </h4>
+                    <p class="price product-item_price">
+                      9800 $
+                    </p>
+                    <p class="product-item_notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product-slider_item">
+                <div class="product-item_wrapper">
+                  <button class="product-item_favorite">
+                  </button>
+                  <button class="product-item_basket">
+                    <img src="images/basket-white.svg" alt="">
+                  </button>
+                  <a class="product-item_notify-link" href="#">
+                    <span>Сообщить о поступлении</span>
+                  </a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item_hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item_img" src="images/product-1.png" alt="">
+                    <h4 class="product-item_title">
+                      Водонепроницаемый
+                      рюкзак
+                    </h4>
+                    <p class="price product-item_price">
+                      9800 $
+                    </p>
+                    <p class="product-item_notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product-slider_item">
+                <div class="product-item_wrapper product-item_not-available">
+                  <button class="product-item_favorite">
+                  </button>
+                  <button class="product-item_basket">
+                    <img src="images/basket-white.svg" alt="">
+                  </button>
+                  <a class="product-item_notify-link" href="#">
+                    <span>Сообщить о поступлении</span>
+                  </a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item_hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item_img" src="images/product-1.png" alt="">
+                    <h4 class="product-item_title">
+                      Водонепроницаемый
+                      рюкзак
+                    </h4>
+                    <p class="price product-item_price">
+                      9800 $
+                    </p>
+                    <p class="product-item_notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product-slider_item">
+                <div class="product-item_wrapper">
+                  <button class="product-item_favorite">
+                  </button>
+                  <button class="product-item_basket">
+                    <img src="images/basket-white.svg" alt="">
+                  </button>
+                  <a class="product-item_notify-link" href="#">
+                    <span>Сообщить о поступлении</span>
+                  </a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item_hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item_img" src="images/product-1.png" alt="">
+                    <h4 class="product-item_title">
+                      Водонепроницаемый
+                      рюкзак
+                    </h4>
+                    <p class="price product-item_price">
+                      9800 $
+                    </p>
+                    <p class="product-item_notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product-slider_item">
+                <div class="product-item_wrapper">
+                  <button class="product-item_favorite">
+                  </button>
+                  <button class="product-item_basket">
+                    <img src="images/basket-white.svg" alt="">
+                  </button>
+                  <a class="product-item_notify-link" href="#">
+                    <span>Сообщить о поступлении</span>
+                  </a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item_hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item_img" src="images/product-1.png" alt="">
+                    <h4 class="product-item_title">
+                      Водонепроницаемый
+                      рюкзак
+                    </h4>
+                    <p class="price product-item_price">
+                      9800 Р
+                    </p>
+                    <p class="product-item_notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product-slider_item">
+                <div class="product-item_wrapper product-item_not-available">
+                  <button class="product-item_favorite">
+                  </button>
+                  <button class="product-item_basket">
+                    <img src="images/basket-white.svg" alt="">
+                  </button>
+                  <a class="product-item_notify-link" href="#">
+                    <span>Сообщить о поступлении</span>
+                  </a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item_hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item_img" src="images/product-1.png" alt="">
+                    <h4 class="product-item_title">
+                      Водонепроницаемый
+                      рюкзак
+                    </h4>
+                    <p class="price product-item_price">
+                      9800 Р
+                    </p>
+                    <p class="product-item_notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product-slider_item">
+                <div class="product-item_wrapper">
+                  <button class="product-item_favorite"></button>
+                  <button class="product-item_basket">
+                    <img src="images/basket-white.svg" alt="">
+                  </button>
+                  <a class="product-item_notify-link" href="#">
+                    <span>Сообщить о поступлении</span>
+                  </a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item_hover-text">
+                      Подивитись товар
+                    </p>
+                    <img class="product-item_img" src="images/product-1.png" alt="">
+                    <h4 class="product-item_title">Водонепронекний Рюкзак</h4>
+                    <p class="price product-item_price">9 800 грн</p>
+                    <p class="product-item_notify-text">
+                      немає в наявності
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="popular-tab-2" class="tabs-content products_content">
+            <div class="product-slider">
+              <div class="product-slider_item">
+                <div class="product-item_wrapper">
+                  <button class="product-item_favorite"></button>
+                  <button class="product-item_basket">
+                    <img src="images/basket-white.svg" alt="">
+                  </button>
+                  <a href="#" class="product-item_notify-link">
+                    <span> Повідомити про поступлення</span>
+                  </a>
+                  <a class="product-item" href="#">
+                    <p class="product-item_hover-text">
+                      Подивитись товар
+                    </p>
+                    <img class="product-item_img" src="images/product-1.png" alt="">
+                    <h4 class="product-item_title">Водонепронекний Рюкзак</h4>
+                    <p class="price product-item_price">9 800 Грн</p>
+                    <p class="product-item_notify-text">
+                      немає в наявності
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product-slider_item">
+                <div class="product-item_wrapper">
+                  <button class="product-item_favorite"></button>
+                  <button class="product-item_basket">
+                    <img src="images/basket-white.svg" alt="">
+                  </button>
+                  <a href="#" class="product-item_notify-link">
+                    <span> Повідомити про поступлення</span>
+                  </a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item_hover-text">
+                      Подивитись товар
+                    </p>
+                    <img class="product-item_img" src="images/product-1.png" alt="">
+                    <h4 class="product-item_title">Водонепронекний Рюкзак</h4>
+                    <p class="price product-item_price">9 800 Грн</p>
+                    <p class="product-item_notify-text">
+                      немає в наявності
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product-slider_item">
+                <div class="product-item_wrapper product-item_not-available">
+                  <button class="product-item_favorite"></button>
+                  <button class="product-item_basket">
+                    <img src="images/basket-white.svg" alt="">
+                  </button>
+                  <a href="#" class="product-item_notify-link">
+                    <span> Повідомити про поступлення</span>
+                  </a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item_hover-text">
+                      Подивитись товар
+                    </p>
+                    <img class="product-item_img" src="images/product-1.png" alt="">
+                    <h4 class="product-item_title">Водонепронекний Рюкзак</h4>
+                    <p class="price product-item_price">9 800 Грн</p>
+                    <p class="product-item_notify-text">
+                      немає в наявності
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product-slider_item">
+                <div class="product-item_wrapper">
+                  <button class="product-item_favorite"></button>
+                  <button class="product-item_basket">
+                    <img src="images/basket-white.svg" alt="">
+                  </button>
+                  <a href="#" class="product-item_notify-link">
+                    <span> Повідомити про поступлення</span>
+                  </a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item_hover-text">
+                      Подивитись товар
+                    </p>
+                    <img class="product-item_img" src="images/product-1.png" alt="">
+                    <h4 class="product-item_title">Водонепронекний Рюкзак</h4>
+                    <p class="price product-item_price">9 800 Грн</p>
+                    <p class="product-item_notify-text">
+                      немає в наявності
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product-slider_item">
+                <div class="product-item_wrapper">
+                  <button class="product-item_favorite"></button>
+                  <button class="product-item_basket">
+                    <img src="images/basket-white.svg" alt="">
+                  </button>
+                  <a href="#" class="product-item_notify-link">
+                    <span> Повідомити про поступлення</span>
+                  </a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item_hover-text">
+                      Подивитись товар
+                    </p>
+                    <img class="product-item_img" src="images/product-1.png" alt="">
+                    <h4 class="product-item_title">Водонепронекний Рюкзак</h4>
+                    <p class="price product-item_price">9 800 Грн</p>
+                    <p class="product-item_notify-text">
+                      немає в наявності
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product-slider_item">
+                <div class="product-item_wrapper">
+                  <button class="product-item_favorite"></button>
+                  <button class="product-item_basket">
+                    <img src="images/basket-white.svg" alt="">
+                  </button>
+                  <a href="#" class="product-item_notify-link">
+                    <span> Повідомити про поступлення</span>
+                  </a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item_hover-text">
+                      Подивитись товар
+                    </p>
+                    <img class="product-item_img" src="images/product-1.png" alt="">
+                    <h4 class="product-item_title">Водонепронекний Рюкзак</h4>
+                    <p class="price product-item_price">9 800 Грн</p>
+                    <p class="product-item_notify-text">
+                      немає в наявності
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product-slider_item">
+                <div class="product-item_wrapper">
+                  <button class="product-item_favorite"></button>
+                  <button class="product-item_basket">
+                    <img src="images/basket-white.svg" alt="">
+                  </button>
+                  <a href="#" class="product-item_notify-link">
+                    <span> Повідомити про поступлення</span>
+                  </a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item_hover-text">
+                      Подивитись товар
+                    </p>
+                    <img class="product-item_img" src="images/product-1.png" alt="">
+                    <h4 class="product-item_title">Водонепронекний Рюкзак</h4>
+                    <p class="price product-item_price">9 800 Грн</p>
+                    <p class="product-item_notify-text">
+                      немає в наявності
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="popular-tab-3" class="tabs-content products_content">slider-3</div>
+          <div id="popular-tab-4" class="tabs-content products_content">slider-4</div>
+          <div id="popular-tab-5" class="tabs-content products_content">slider-5</div>
+          <div id="popular-tab-6" class="tabs-content products_content">slider-6</div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer_top">
+        <div class="footer_top-inner">
+          <div class="footer_top-item footer_top-newslatter">
+            <h6 class="footer_top-title">
+              Подпишись на рассылку и узнавай о лекции первым
+            </h6>
+            <form class="footer-form">
+              <input class="footer-form_input" type="text" placeholder="Введіть ваш e-mail:">
+              <button class="footer-form_btn" type="submit">Відправити</button>
+            </form>
+          </div>
+          <div class="footer_top-item footer_top-itemdrop">
+            <h6 class="footer_top-title footer_topdrop">
+              Інформація
+            </h6>
+            <ul class="footer_list">
+              <li class="footer-list_item"><a href="#">Про компанію</a></li>
+              <li class="footer-list_item"><a href="#">Акції</a></li>
+              <li class="footer-list_item"><a href="#">Магазини</a></li>
+              <li class="footer-list_item"><a href="#">Контакти</a></li>
+            </ul>
+          </div>
+          <div class="footer_top-item">
+            <h6 class="footer_top-title footer_topdrop">
+              Інтернет магазин
+            </h6>
+            <ul class="footer_list footer_topdrop">
+              <li class="footer-list_item"><a href="#">Доставка і самовивіз</a></li>
+              <li class="footer-list_item"><a href="#">Оплата</a></li>
+              <li class="footer-list_item"><a href="#">Повернення та обмін</a></li>
+              <li class="footer-list_item"><a href="#">Новини</a></li>
+            </ul>
+          </div>
+          <div class="footer_top-item footer_top-social">
+            <ul class="social-list">
+              <li class="social-list_item">
+                <a href="#">
+                  <img src="images/instagram.svg" alt="">
+                </a>
+              </li>
+              <li class="social-list_item">
+                <a href="#">
+                  <img src="images/youtube.svg" alt="">
+                </a>
+              </li>
+              <li class="social-list_item">
+                <a href="#">
+                  <img src="images/facebook.svg" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <a class="footer_bottom-link" href="#">
+          Договір публічної оферти
+        </a>
+        <a class="footer_bottom-link" href="#">
+          Всі права захищено
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/ion.rangeSlider.min.js"></script>
+  <script src="js/jquery.formstyler.min.js"></script>
+  <script src="js/jquery.rateyo.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
+
+<!--div class="tabs-wrapper">
+   <div class="tabs">
+      <a class="tab tab--active" href="#"></a>
+   </div>
+   <div class="tabs-container">
+      <div class="tabs-content tabs-content--active">
+
+      </div>
+   </div>
+</!--div>
